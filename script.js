@@ -11,7 +11,7 @@ function selectOption(option) {
         // Change text on the "No" button to "You sure?"
         displayFrostie();
         document.getElementById('no-button').innerText = 'You sure?'; 
-        
+        document.getElementById('lonely-text').style.display = 'none';
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -79,6 +79,7 @@ function displayDuckHeart() {
 document.addEventListener('DOMContentLoaded', function() {
     displayFrostieFunny();
 });
+
 
 
 
