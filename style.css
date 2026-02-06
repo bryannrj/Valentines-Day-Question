@@ -26,6 +26,15 @@ body {
     margin-top: 20px; /* Add space above the options */
 }
 
+#lonely-text {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
 button {
     padding: 10px 20px; /* Set padding for buttons */
     margin: 0 10px; /* Set margin around buttons */
@@ -35,4 +44,5 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+
 }
