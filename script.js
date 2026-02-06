@@ -6,6 +6,7 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayDuckHeart(); // Display the cat-heart.gif
+            displayFrostieFunny();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -73,6 +74,25 @@ function displayDuckHeart() {
         document.getElementById('options').style.display = 'none';
     };
 }
-
+// Function to display the cat-heart.gif
+function displayFrositeFunny() {
+    // Clear existing content in the image container
+    document.getElementById('image-container').innerHTML = '';
+    // Get the container where the image will be displayed
+    var imageContainer = document.getElementById('image-container');
+    // Create a new Image element for the cat-heart
+    var catHeartImage = new Image();
+    // Set the source (file path) for the cat-heart image
+    catHeartImage.src = 'frostie2.webp'; // Assuming the cat-heart image is named "cat-heart.gif"
+    // Set alternative text for the image (for accessibility)
+    catHeartImage.alt = 'Frostie2';
+    // When the cat-heart image is fully loaded, add it to the image container
+    catHeartImage.onload = function() {
+        imageContainer.appendChild(catHeartImage);
+        // Hide the options container
+        document.getElementById('options').style.display = 'none';
+    };
+}
 // Display the cat.gif initially
+
 displayFrostie();
