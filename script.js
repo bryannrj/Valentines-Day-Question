@@ -6,11 +6,12 @@ function selectOption(option) {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displayDuckHeart(); // Display the cat-heart.gif
-            displayFrostieFunny();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
+        displayFrostie();
         document.getElementById('no-button').innerText = 'You sure?'; 
+        
         // Increase font size of "Yes" button
         var yesButton = document.getElementById('yes-button');
         var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
@@ -36,7 +37,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 2000); // Flash colors for 2 seconds
+    }, 1500); // Flash colors for 2 seconds
 }
 
 // Function to display the cat.gif initially
@@ -95,4 +96,5 @@ function displayFrositeFunny() {
 }
 // Display the cat.gif initially
 
-displayFrostie();
+displayFrostieFunny();
+
