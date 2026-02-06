@@ -40,32 +40,23 @@ function flashRainbowColors(callback) {
     }, 1500); // Flash colors for 2 seconds
 }
 
-// Function to display the cat.gif initially
 function displayFrostie() {
-    // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the cat
+    imageContainer.innerHTML = ''; // Clear previous image
     var catImage = new Image();
-    // Set the source (file path) for the cat image
-    catImage.src = 'frostie.webp'; // Assuming the cat image is named "cat.gif"
-    // Set alternative text for the image (for accessibility)
+    catImage.src = 'frostie.webp';
     catImage.alt = 'Frostie';
-    // When the cat image is fully loaded, add it to the image container
     catImage.onload = function() {
         imageContainer.appendChild(catImage);
     };
 }
-// Function to display the cat.gif initially
+
 function displayFrostieFunny() {
-    // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the cat
+    imageContainer.innerHTML = ''; // Clear previous image
     var catImage = new Image();
-    // Set the source (file path) for the cat image
-    catImage.src = 'frostie2.webp'; // Assuming the cat image is named "cat.gif"
-    // Set alternative text for the image (for accessibility)
+    catImage.src = 'frostie2.webp';
     catImage.alt = 'Frostie2';
-    // When the cat image is fully loaded, add it to the image container
     catImage.onload = function() {
         imageContainer.appendChild(catImage);
     };
@@ -92,5 +83,6 @@ function displayDuckHeart() {
 }
 
 displayFrostieFunny();
+
 
 
