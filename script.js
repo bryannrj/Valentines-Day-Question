@@ -82,7 +82,10 @@ function displayDuckHeart() {
     };
 }
 
-displayFrostieFunny();
+// Replace the last line:
+document.addEventListener('DOMContentLoaded', function() {
+    displayFrostieFunny();
+});
 
 
 
